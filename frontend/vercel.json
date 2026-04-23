@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "buildCommand": "npm install && chmod -R +x node_modules/.bin && npx vite build",
+  "outputDirectory": "dist"
+}
