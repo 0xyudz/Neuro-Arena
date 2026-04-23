@@ -1,0 +1,66 @@
+/* frontend/src/index.css */
+
+/* 1. Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Global Styles & Cyberpunk Theme */
+@layer base {
+    body {
+        background-color: #0a0a0f;
+        color: white;
+        @apply bg-arena-bg text-white antialiased;
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Scrollbar Styling */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-arena-bg;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-arena-border rounded-full;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-arena-primary;
+    }
+}
+
+/* 3. Custom Animations */
+@layer utilities {
+    .text-glow {
+        text-shadow: 0 0 10px currentColor;
+    }
+
+    .box-glow {
+        box-shadow: 0 0 20px rgba(0, 245, 255, 0.15);
+    }
+
+    .neon-border {
+        @apply border border-arena-primary;
+        box-shadow: 0 0 5px #00f5ff, inset 0 0 5px rgba(0, 245, 255, 0.2);
+    }
+}
+
+/* 4. Utility Classes for Specific Elements */
+.cyber-gradient {
+    background: linear-gradient(135deg, #00f5ff 0%, #7b2cbf 50%, #ff00aa 100%);
+}
+
+.card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-arena-primary/20;
+}
+
+.btn-primary {
+    @apply bg-arena-primary text-black font-bold py-2 px-4 rounded-lg hover:bg-opacity-90 transition-colors;
+}
+
+.btn-secondary {
+    @apply border border-arena-primary text-arena-primary font-bold py-2 px-4 rounded-lg hover:bg-arena-primary/10 transition-colors;
+}
