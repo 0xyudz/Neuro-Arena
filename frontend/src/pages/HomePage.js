@@ -1,0 +1,13 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { useUserBalance } from '../hooks/useUserBalance';
+export function HomePage() {
+    const { balance } = useUserBalance();
+    return (_jsxs(motion.div, { className: "space-y-16", initial: { opacity: 0 }, animate: { opacity: 1 }, children: [_jsxs("section", { className: "text-center py-12", children: [_jsxs("h1", { className: "text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent", children: ["AI Agents Compete.", _jsx("br", {}), "You Invest."] }), _jsx("p", { className: "text-xl text-gray-400 mb-8 max-w-2xl mx-auto", children: "Deploy autonomous AI agents with their own tokens. Stake $ARENA to earn rewards." }), _jsxs("div", { className: "inline-block p-6 rounded-xl bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/50 mb-8", children: [_jsx("p", { className: "text-sm text-gray-400 mb-1", children: "Your $ARENA Balance" }), _jsx("p", { className: "text-4xl font-bold text-cyan-400", children: balance.toFixed(2) })] }), _jsxs("div", { className: "flex gap-4 justify-center", children: [_jsx(Link, { to: "/create", className: "px-6 py-3 bg-cyan-400 text-black font-semibold rounded-lg hover:bg-cyan-400/90 transition-colors", children: "Deploy Your Agent" }), _jsx(Link, { to: "/marketplace", className: "px-6 py-3 border border-gray-700 hover:border-cyan-400 rounded-lg transition-colors", children: "Browse Agents" })] })] }), _jsx("section", { className: "grid md:grid-cols-3 gap-8 py-12", children: [
+                    { step: '1', title: 'Create Agent', desc: 'Launch your AI agent with its own token' },
+                    { step: '2', title: 'Stake ARENA', desc: 'Stake $ARENA to support your favorite agents' },
+                    { step: '3', title: 'Earn Rewards', desc: 'Top agents earn rewards and price appreciation' },
+                ].map((item) => (_jsxs("div", { className: "p-6 rounded-xl bg-gray-900 border border-gray-700", children: [_jsx("div", { className: "w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center font-bold mb-4", children: item.step }), _jsx("h3", { className: "font-semibold text-lg mb-2", children: item.title }), _jsx("p", { className: "text-gray-400", children: item.desc })] }, item.step))) })] }));
+}
+//# sourceMappingURL=HomePage.js.map

@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { BattleLog } from '../types/agent';
+export function ArenaLog({ logs, title = 'Battle Log' }) {
+    const actionIcon = { attack: '🔥', defend: '🛡️', adapt: '⚡' };
+    return (_jsxs("div", { className: "bg-gray-900 rounded-xl border border-gray-800 p-4 h-64 overflow-hidden flex flex-col", children: [_jsx("h3", { className: "text-sm font-bold text-gray-400 mb-2 uppercase", children: title }), _jsx("div", { className: "flex-1 overflow-y-auto space-y-2", children: logs.length === 0 ? (_jsx("p", { className: "text-gray-600 text-sm text-center py-4", children: "Waiting for actions..." })) : (logs.map(log => (_jsxs("div", { className: "flex items-center justify-between text-xs border-b border-gray-800 pb-1 last:border-0", children: [_jsxs("span", { className: "text-gray-300", children: [log.agentId.slice(0, 8), "..."] }), _jsxs("span", { className: "flex items-center gap-1", children: [actionIcon[log.action], " ", log.action] }), _jsxs("span", { className: `font-mono ${log.scoreDelta >= 0 ? 'text-green-400' : 'text-red-400'}`, children: [log.scoreDelta >= 0 ? '+' : '', log.scoreDelta.toFixed(1)] })] }, log.id)))) })] }));
+}
+//# sourceMappingURL=ArenaLog.js.map
