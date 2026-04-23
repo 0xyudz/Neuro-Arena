@@ -7,8 +7,7 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src --ext ts",
-    "postinstall": "chmod +x node_modules/.bin/prisma || true"
+    "lint": "eslint src --ext ts"
   },
   "dependencies": {
     "@agent-arena/shared": "file:../shared",
