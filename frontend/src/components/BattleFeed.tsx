@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 // ✅ PASTIKAN INI 3001
-const API_URL = 'http://localhost:3001';
+const API_URL = import.meta.env.VITE_API_URL || 'https://neuroarena.onrender.com';
 
 interface BattleLog {
   id: string;

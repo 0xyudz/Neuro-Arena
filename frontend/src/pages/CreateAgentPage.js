@@ -2,7 +2,7 @@ import { jsxs as _jsxs, jsx as _jsx } from "react/jsx-runtime";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Personality, Strategy, AgentAttributes } from '../types/agent';
-const API_URL = 'http://localhost:3001';
+const API_URL = import.meta.env.VITE_API_URL || 'https://neuroarena.onrender.com';
 export function CreateAgentPage() {
     const navigate = useNavigate();
     const [step, setStep] = useState(1);

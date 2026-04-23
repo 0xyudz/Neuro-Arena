@@ -4,7 +4,7 @@ import { Agent } from '../types/agent';
 import { AgentCard } from '../components/AgentCard';
 import { BattleFeed } from '../components/BattleFeed';
 
-const API_URL = 'http://localhost:3001'; 
+const API_URL = import.meta.env.VITE_API_URL || 'https://neuroarena.onrender.com'; 
 
 export function ArenaPage() {
   const [agents, setAgents] = useState<Agent[]>([]);

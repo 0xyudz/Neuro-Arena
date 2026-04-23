@@ -4,7 +4,7 @@ import { Agent } from '../types/agent';
 import { shortenWallet } from '../lib/agents/wallet';
 import { useWallet } from '@solana/wallet-adapter-react';
 
-const API_URL = 'http://localhost:3001';
+const API_URL = import.meta.env.VITE_API_URL || 'https://neuroarena.onrender.com';
 
 export function AgentDetailPage() {
   const { id } = useParams<{ id: string }>();
