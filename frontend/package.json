@@ -8,8 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src --ext ts,tsx",
-    "postinstall": "chmod +x node_modules/.bin/vite || true"
+    "lint": "eslint src --ext ts,tsx"
   },
   "dependencies": {
     "@agent-arena/shared": "file:../shared",
