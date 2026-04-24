@@ -1,1 +1,0 @@
-{"version":3,"file":"stakeService.d.ts","sourceRoot":"","sources":["stakeService.ts"],"names":[],"mappings":"AAEA,eAAO,MAAM,YAAY;IACvB;;OAEG;sBACqB,MAAM,WAAW,MAAM,UAAU,MAAM;;;;;;;;;;IA0B/D;;OAEG;gCAC+B,MAAM,GAAG,OAAO,CAAC,MAAM,CAAC;IAQ1D;;OAEG;8BAC6B,MAAM;;;;;;;;;;;;;;IAiBtC;;OAEG;4BAC2B,MAAM;;;;;CAQrC,CAAC;AAEF,eAAe,YAAY,CAAC"}

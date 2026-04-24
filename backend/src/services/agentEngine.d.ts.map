@@ -1,1 +1,0 @@
-{"version":3,"file":"agentEngine.d.ts","sourceRoot":"","sources":["agentEngine.ts"],"names":[],"mappings":"AAGA,cAAM,WAAW;IACf,OAAO,CAAC,KAAK,CAAK;IAClB,OAAO,CAAC,OAAO,CAAS;IACxB,OAAO,CAAC,QAAQ,CAAa;IAG7B,KAAK;IAcL,IAAI;YAQU,QAAQ;CAmDvB;AAGD,eAAO,MAAM,WAAW,aAAoB,CAAC"}
