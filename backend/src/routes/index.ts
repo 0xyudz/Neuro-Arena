@@ -1,5 +1,5 @@
 // backend/src/routes/index.ts
-// Minimal route setup for Agent Arena backend
+// Minimal route setup for Neuro Arena backend
 
 import { Router, Request, Response, NextFunction } from 'express';
 import { prisma } from '../config/database';
